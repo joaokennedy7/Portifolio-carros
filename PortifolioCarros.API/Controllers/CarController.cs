@@ -1,30 +1,46 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PortifolioCarros.API.DTOs;
+using PortifolioCarros.API.Persistence.SqlServer.Repositories;
 
 namespace PortifolioCarros.API.Controllers
 {
-
     [Route("auto/")]
     [ApiController]
     public class CarController : ControllerBase
     {
+        private readonly CarRepository _carRepository;
 
-        private readonly List<GetCarsDto> cars = new List<GetCarsDto>
+        public CarController(CarRepository carRepository)
         {
-            new GetCarsDto (1, "Nivus", "Volksvagem", 2022, "url1", 100000),
-            new GetCarsDto (2, "Onix", "Chevrolet", 2021, "url2", 75000),
-            new GetCarsDto (3, "GLE 200", "Mercedes", 2017, "url3", 175000)
-        };
+            _carRepository = carRepository;
+        }
 
         [Route("cars")]
         [HttpGet]
-        public IActionResult GetCars()
+        public ActionResult<IEnumerable<GetCarsDto>> GetCars()
         {
-            var listagemCarros = cars;
-
-            return Ok(listagemCarros);
+            return Ok(_carRepository.List());
         }
 
-        
+        [Route("cars/{id}")]
+        [HttpGet]
+        public ActionResult<CarDetailDto> Get(int id)
+        {
+            var car = _carRepository.Get(id);
+            if (car == null)
+            {
+                return NotFound();
+            }
+            return Ok(car);
+        }
+
+        [Route("cars")]
+        [HttpPost]
+        public ActionResult<CarDetailDto> Create(CreateCarDto model)
+        {
+            var response = _carRepository.Create(model);
+            return Ok(response);
+        }
+
     }
 }

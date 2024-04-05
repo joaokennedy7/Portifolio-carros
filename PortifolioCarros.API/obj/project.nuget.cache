@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "7ajURmYeTMGINuyCpBFXFZCdgjIwCmeFTgECUqTx0Kgj0+WDCiJfTW2yj2rgxuBVV1Xzi+7swzQ1jAWCZJVlbg==",
+  "dgSpecHash": "TR7w2OHyclmUMXA+Em9U/LMnRKWAtkM2955SxyKOQCcyAl1ysp2H8thi35ZmRUeZtRpwAZBElaTT4mDxKTHwbA==",
   "success": true,
   "projectFilePath": "D:\\sistemas-backup\\PortifolioCarros\\PortifolioCarros.API\\PortifolioCarros.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Jhon\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Jhon\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Jhon\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\Jhon\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",

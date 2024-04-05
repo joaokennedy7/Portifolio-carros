@@ -135,3 +135,5 @@ D:\sistemas-backup\PortifolioCarros\PortifolioCarros.API\obj\Debug\net8.0\Portif
 D:\sistemas-backup\PortifolioCarros\PortifolioCarros.API\obj\Debug\net8.0\PortifolioCarros.API.genruntimeconfig.cache
 D:\sistemas-backup\PortifolioCarros\PortifolioCarros.API\obj\Debug\net8.0\ref\PortifolioCarros.API.dll
 D:\sistemas-backup\PortifolioCarros\PortifolioCarros.API\bin\Debug\net8.0\FluentValidation.dll
+D:\sistemas-backup\PortifolioCarros\PortifolioCarros.API\obj\Debug\net8.0\PortifolioCarros.API.sourcelink.json
+D:\sistemas-backup\PortifolioCarros\PortifolioCarros.API\bin\Debug\net8.0\AutoMapper.dll

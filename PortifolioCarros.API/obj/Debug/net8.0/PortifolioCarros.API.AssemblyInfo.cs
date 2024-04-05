@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PortifolioCarros.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+711cb4ac4ed0f0e006106117913854726825fb52")]
 [assembly: System.Reflection.AssemblyProductAttribute("PortifolioCarros.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PortifolioCarros.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

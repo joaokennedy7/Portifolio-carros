@@ -1,5 +1,8 @@
+using AutoMapper;
 using Microsoft.EntityFrameworkCore;
+using PortifolioCarros.API.Configurations;
 using PortifolioCarros.API.Persistence.SqlServer;
+using PortifolioCarros.API.Persistence.SqlServer.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +12,8 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddScoped<CarRepository>();
+builder.Services.ConfigureAutoMapper();
 
 builder.Services.AddDbContext<PortifolioContext>(x =>
     x.UseSqlServer(builder.Configuration.GetConnectionString("PortifolioDb"))
