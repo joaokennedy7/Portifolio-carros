@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "TR7w2OHyclmUMXA+Em9U/LMnRKWAtkM2955SxyKOQCcyAl1ysp2H8thi35ZmRUeZtRpwAZBElaTT4mDxKTHwbA==",
+  "dgSpecHash": "NPv1rWmn4kzH+cEZy8TRpsV1k777Bi8eghAkd+6JkpP3BRfcs2aap8ae2eL/+9Jbqjr6wz6FvkQBTarrXWiSNg==",
   "success": true,
   "projectFilePath": "D:\\sistemas-backup\\PortifolioCarros\\PortifolioCarros.API\\PortifolioCarros.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jhon\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Jhon\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Jhon\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\Jhon\\.nuget\\packages\\erroror\\2.0.1\\erroror.2.0.1.nupkg.sha512",
     "C:\\Users\\Jhon\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
     "C:\\Users\\Jhon\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Jhon\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",

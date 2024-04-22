@@ -4,14 +4,14 @@
     "D:\\sistemas-backup\\PortifolioCarros\\PortifolioCarros.Unit\\PortifolioCarros.Unit.csproj": {}
   },
   "projects": {
-    "D:\\sistemas-backup\\PortifolioCarros\\PortifolioCarros.Unit\\PortifolioCarros.Unit.csproj": {
+    "D:\\sistemas-backup\\PortifolioCarros\\PortifolioCarros.API\\PortifolioCarros.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\sistemas-backup\\PortifolioCarros\\PortifolioCarros.Unit\\PortifolioCarros.Unit.csproj",
-        "projectName": "PortifolioCarros.Unit",
-        "projectPath": "D:\\sistemas-backup\\PortifolioCarros\\PortifolioCarros.Unit\\PortifolioCarros.Unit.csproj",
+        "projectUniqueName": "D:\\sistemas-backup\\PortifolioCarros\\PortifolioCarros.API\\PortifolioCarros.API.csproj",
+        "projectName": "PortifolioCarros.API",
+        "projectPath": "D:\\sistemas-backup\\PortifolioCarros\\PortifolioCarros.API\\PortifolioCarros.API.csproj",
         "packagesPath": "C:\\Users\\Jhon\\.nuget\\packages\\",
-        "outputPath": "D:\\sistemas-backup\\PortifolioCarros\\PortifolioCarros.Unit\\obj\\",
+        "outputPath": "D:\\sistemas-backup\\PortifolioCarros\\PortifolioCarros.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Jhon\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,9 +40,119 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "ErrorOr": {
+              "target": "Package",
+              "version": "[2.0.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.9.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\sistemas-backup\\PortifolioCarros\\PortifolioCarros.Unit\\PortifolioCarros.Unit.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\sistemas-backup\\PortifolioCarros\\PortifolioCarros.Unit\\PortifolioCarros.Unit.csproj",
+        "projectName": "PortifolioCarros.Unit",
+        "projectPath": "D:\\sistemas-backup\\PortifolioCarros\\PortifolioCarros.Unit\\PortifolioCarros.Unit.csproj",
+        "packagesPath": "C:\\Users\\Jhon\\.nuget\\packages\\",
+        "outputPath": "D:\\sistemas-backup\\PortifolioCarros\\PortifolioCarros.Unit\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Jhon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\sistemas-backup\\PortifolioCarros\\PortifolioCarros.API\\PortifolioCarros.API.csproj": {
+                "projectPath": "D:\\sistemas-backup\\PortifolioCarros\\PortifolioCarros.API\\PortifolioCarros.API.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[6.12.0, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.9.0, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.6.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.70, )"
             },
             "coverlet.collector": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",

@@ -8,9 +8,9 @@ namespace PortifolioCarros.API.Controllers
     [ApiController]
     public class CarController : ControllerBase
     {
-        private readonly CarRepository _carRepository;
+        private readonly ICarRepository _carRepository;
 
-        public CarController(CarRepository carRepository)
+        public CarController(ICarRepository carRepository)
         {
             _carRepository = carRepository;
         }
@@ -36,11 +36,38 @@ namespace PortifolioCarros.API.Controllers
 
         [Route("cars")]
         [HttpPost]
-        public ActionResult<CarDetailDto> Create(CreateCarDto model)
+        public ActionResult<CarDetailDto> Create(CreateOrUpdateCarDto model)
         {
             var response = _carRepository.Create(model);
-            return Ok(response);
+
+            if (response.IsError)
+                return BadRequest(response.Errors);
+
+            return Ok(response.Value);
         }
 
+        [Route("cars/{id}")]
+        [HttpPut]
+        public ActionResult<CarDetailDto> Update(int id, CreateOrUpdateCarDto model)
+        {
+            var response = _carRepository.Update(id, model);
+
+            if (response.IsError)
+                return NotFound(response.Errors);
+
+            return Ok(response.Value);
+        }
+
+        [Route("cars/{id}")]
+        [HttpDelete]
+        public ActionResult Delete(int id)
+        {
+            var response = _carRepository.Delete(id);
+
+            if (response.IsError)
+                return NotFound(response.Errors);
+
+            return Ok(response.Value);
+        }
     }
 }

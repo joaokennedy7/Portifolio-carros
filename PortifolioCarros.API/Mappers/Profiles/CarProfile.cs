@@ -7,11 +7,11 @@ namespace PortifolioCarros.API.Mappers.Profiles
         public CarProfile()
         {
             CreateMap<Entities.Car, DTOs.GetCarsDto>()
-                .ForMember(x => x.UrlPhoto, a => a.Ignore());
+                .ForPath(dest => dest.Photo, m => m.MapFrom(src => src.Pictures.FirstOrDefault().Url));
 
             CreateMap<Entities.Car, DTOs.CarDetailDto>();
 
-            CreateMap<DTOs.CreateCarDto, Entities.Car>();
+            CreateMap<DTOs.CreateOrUpdateCarDto, Entities.Car>();
         }
     }
 }

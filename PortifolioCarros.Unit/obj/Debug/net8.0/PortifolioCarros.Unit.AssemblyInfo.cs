@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PortifolioCarros.Unit")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a07664d492bec89fa04d6c06f4b58771953f8a71")]
 [assembly: System.Reflection.AssemblyProductAttribute("PortifolioCarros.Unit")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PortifolioCarros.Unit")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -137,3 +137,4 @@ D:\sistemas-backup\PortifolioCarros\PortifolioCarros.API\obj\Debug\net8.0\ref\Po
 D:\sistemas-backup\PortifolioCarros\PortifolioCarros.API\bin\Debug\net8.0\FluentValidation.dll
 D:\sistemas-backup\PortifolioCarros\PortifolioCarros.API\obj\Debug\net8.0\PortifolioCarros.API.sourcelink.json
 D:\sistemas-backup\PortifolioCarros\PortifolioCarros.API\bin\Debug\net8.0\AutoMapper.dll
+D:\sistemas-backup\PortifolioCarros\PortifolioCarros.API\bin\Debug\net8.0\ErrorOr.dll
